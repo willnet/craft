@@ -6,7 +6,7 @@ class PdfDeliveryTest < ActionDispatch::IntegrationTest
 
     assert_match 'PDF', response.body
     assert_equal 'binary', headers['Content-Transfer-Encoding']
-    assert_eqal "attachment; filename=\"contents.pdf\"", headers['Content-Disposition']
-    asset_equal 'application/pdf', headers['Content-Type']
+    assert_equal "attachment; filename=\"contents.pdf\"", headers['Content-Disposition']
+    assert_equal 'application/pdf', headers['Content-Type']
   end
 end
