@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = MailForm::VERSION
   s.authors     = ["willnet"]
   s.email       = ["netwillnet@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MailForm."
-  s.description = "TODO: Description of MailForm."
+  s.homepage    = "http://willnet.in"
+  s.summary     = "Summary of MailForm."
+  s.description = "Description of MailForm."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
