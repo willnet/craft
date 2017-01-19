@@ -10,6 +10,12 @@ module MailForm
     self.attribute_names = []
     attribute_method_prefix 'clear_'
 
+    def initialize(attributes = {})
+      attributes.each do |attr, value|
+        self.public_send("#{attr}=", value)
+      end if attributes
+    end
+
     def self.attributes(*names)
       attr_accessor(*names)
       define_attribute_methods(names)
