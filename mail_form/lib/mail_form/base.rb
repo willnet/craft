@@ -5,6 +5,7 @@ module MailForm
     extend ActiveModel::Naming
     extend ActiveModel::Translation
     include ActiveModel::Validations
+    include MailForm::Validators
 
     class_attribute :attribute_names
     self.attribute_names = []
